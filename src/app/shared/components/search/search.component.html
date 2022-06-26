@@ -1,0 +1,50 @@
+<mat-form-field appearance="outline" size="2" class="flex-auto w-full">
+    <mat-label>Search</mat-label>
+    <input matInput [formControl]="searchControl" [matAutocomplete]="matAutocomplete"
+        [placeholder]="'Search articles'">
+
+    <mat-icon matSuffix>search</mat-icon>
+
+    <mat-autocomplete  class="max-h-128 sm:px-2 border-t rounded-b shadow-md" #matAutocomplete="matAutocomplete">
+        <mat-option class="p-0 text-md pointer-events-none text-secondary bg-transparent"
+            *ngIf="resultSets && !resultSets.length">
+            Start typing...
+        </mat-option>
+        <ng-container *ngFor="let resultSet of resultSets; trackBy: trackByFn">
+            <!-- Replaced mat-optgroup by div  -->
+            <div class="flex items-center min-h-14 space-y-4 mt-3.5 mb-3.5">
+                <span class="text-lg font-semibold text-secondary">
+                   {{resultSet.label | uppercase}}
+                </span>
+            </div>
+            <ng-container *ngFor="let result of resultSet.results; trackBy: trackByFn">
+                <mat-option (click)="onSelectBlog(result)"
+                    class="group relative p-0 text-md rounded-md hover:bg-gray-100 dark:hover:bg-hover w-full h-auto max-h-56 mb-3">
+                    <ng-container *ngIf="resultSet.id === 'posts'">
+                        <ng-container *ngTemplateOutlet="postResult; context: {$implicit: result}">
+                        </ng-container>
+                    </ng-container>
+                </mat-option>
+            </ng-container>
+        </ng-container>
+    </mat-autocomplete>
+    
+</mat-form-field>
+
+<ng-template #postResult let-result>
+    <ng-container>
+
+        <div class="flex items-center w-full h-fit">
+            <div
+                class="flex flex-shrink-0 items-center justify-center overflow-hidden bg-primary-100 dark:bg-primary-800 w-52 h-28">
+                <img *ngIf="result.title"
+                    [src]="'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'">
+            </div>
+            <div class="ml-3 truncate h-24">
+                <span class="card-title-font" [innerHTML]="result.title"></span>
+                <p class="whitespace-normal leading-relaxed" [innerHTML]="result.description">
+                </p>
+            </div>
+        </div>
+    </ng-container>
+</ng-template>

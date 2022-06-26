@@ -1,0 +1,30 @@
+.footer-bg {
+    background-color: #151515;
+    // background-image: url('https://video.fcmn5-1.fna.fbcdn.net/v/t1.6435-9/139049991_4923080744429164_5557414686745973267_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeE1aDmzVKI7UdoLsurvagCSZwICB1klS7FnAgIHWSVLsVndei41L5fwjdL1NAr6erEJrgS7dBIVqqYugM7V442C&_nc_ohc=DgoeDy4LjtAAX_QLXdz&_nc_ht=video.fcmn5-1.fna&oh=00_AT-EJxaLwQeOD_rESHDvQRGa5HWwZtErCSry_hltlGsy5w&oe=62A26E2F');
+    background-image: url('../../../../assets/images/contact.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    padding-top: 13.2rem;
+    padding-bottom: 12rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.footer-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    background-color: #070606;
+}
+
+h6 {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .16rem;
+}

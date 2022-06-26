@@ -1,0 +1,173 @@
+<!-- Custom header -->
+<header>
+    <!--<div class="p-1 w-full flex justify-between items-center text-white bg-slate-900 z-20">-->
+    <div class="p-1 w-full flex justify-between items-center text-white bg-rose-900 z-20">
+        <app-brand></app-brand>
+        <app-menu></app-menu>
+    </div>
+</header>
+
+<main class="w-176 m-auto">
+
+    <section>
+        <div class="mt-5">
+            <!-- Post Header -->
+            <div class="flex justify-between">
+                <!-- Author and post info -->
+                <div class="flex">
+                    <div class="w-16 h-16 mr-2">
+                        <img class="rounded-full"
+                            src="https://video.frba4-1.fna.fbcdn.net/v/t1.6435-9/139049991_4923080744429164_5557414686745973267_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeE1aDmzVKI7UdoLsurvagCSZwICB1klS7FnAgIHWSVLsVndei41L5fwjdL1NAr6erEJrgS7dBIVqqYugM7V442C&_nc_ohc=cTorqG1tvOsAX9ITZnl&_nc_ht=video.frba4-1.fna&oh=00_AT-Fp2Kb53CJ1ztP2JJtRy4EXfY-8Db5CBajC-Zf1oKqwg&oe=62A662AF">
+                    </div>
+                    <div>
+                        <h6 class="text-lg">Becaye Baldé</h6>
+                        <P>06 May 2022 • 5min read</P>
+                    </div>
+                </div>
+                <!-- Share on Social Media -->
+                <div class="flex">
+                    <div class="flex justify-between">
+                        <a class="mr-2" href="" target="_blank">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                        </a>
+                        <a class="mr-2" href="" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                        </a>
+                        <a class="mr-2" href="" target="_blank">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                        <a class="mr-2" href="" target="_blank">
+                            <i class="fa-solid fa-link fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post title -->
+            <h1 class="mt-3 mb-4">Building a restaurant app with Ionic 6</h1>
+
+            <!-- Post Image -->
+            <div>
+                <img class="mb-5 w-full h-auto rounded-sm"
+                    src="https://images.unsplash.com/photo-1652624757157-2ce4b03affad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=885&q=80">
+            </div>
+
+            <!-- TODO Inspiring Divider -->
+
+            <!-- Post content -->
+            What is Lorem Ipsum?
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <h2>Why do we use it?</h2>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+                over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+
+            <h2>Where does it come from?</h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+                Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+                source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+                section 1.10.32.
+            </p>
+    </div>
+    </section>
+    
+    <!-- Comments -->
+    <section>
+        <!-- Comments -->
+        <div class="mt-5">
+            <ng-container *ngFor="let comment of comments">
+                <div class="flex p-2">
+                    <div class="w-16 h-16 mr-4">
+                        <img class="rounded-full"
+                        [src]="comment.user.avatar"
+                            alt="comment author">
+                    </div>
+                    <div>
+                        <h6 class="my-h6 font-bold">{{comment.user.name}}</h6>
+                        <p>{{comment.content}}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+            <!-- New Comment -->
+        <div class="flex p-4">
+            <div class="w-16 h-16 mr-4">
+                <img class="rounded-full"
+                    src="https://video.frba4-1.fna.fbcdn.net/v/t1.6435-9/139049991_4923080744429164_5557414686745973267_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeE1aDmzVKI7UdoLsurvagCSZwICB1klS7FnAgIHWSVLsVndei41L5fwjdL1NAr6erEJrgS7dBIVqqYugM7V442C&_nc_ohc=2tVezcAJ4TYAX-vemIt&_nc_ht=video.frba4-1.fna&oh=00_AT-715g1BvCVoP60sylMzuufs-_SDhZczVS-vgiiPkDpRQ&oe=62A662AF"
+                    alt="comment author">
+            </div>
+            <div class="w-full">
+                <mat-form-field color="primary" class="w-full" appearance="outline">
+                    <mat-label>Leave a comment</mat-label>
+                    <textarea matInput placeholder="Tell me what you think..."></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Related posts -->
+    </section>
+
+    <!-- Aside -->
+    <aside class="absolute top-64 right-10 mt-3">
+        <mat-card class="shadow-lg rounded-md w-56 bg-rose-900 text-center text-white">
+            <div class="w-32 h-32 m-auto">
+                <img class="rounded-full"
+                    src="https://video.frba4-1.fna.fbcdn.net/v/t1.6435-9/139049991_4923080744429164_5557414686745973267_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=09cbfe&_nc_eui2=AeE1aDmzVKI7UdoLsurvagCSZwICB1klS7FnAgIHWSVLsVndei41L5fwjdL1NAr6erEJrgS7dBIVqqYugM7V442C&_nc_ohc=2tVezcAJ4TYAX-vemIt&_nc_ht=video.frba4-1.fna&oh=00_AT-715g1BvCVoP60sylMzuufs-_SDhZczVS-vgiiPkDpRQ&oe=62A662AF"
+                    alt="comment author">
+            </div>
+            <h5 class="my-h5"><span class="block mt-4">Becaye Baldé</span></h5>
+            <span class="block text-sky-300 mt-2">FullStack Developer</span>
+            <p class="mt-2">Becaye is a graduate Computer Science Student. He's passionate about coding -
+                Fullstack Development, ML and Data Visualization.</p>
+
+            <a mat-raised-button color="primary" class="px-2 text-md hover:opacity-80 w-full">
+                <span class="underline decoration-sky-500">
+                    See Portfolio
+                </span>
+            </a>
+
+            <div class="flex justify-between max-w-fit m-auto mt-3 text-sky-100">
+                <a class="mr-2" href="" target="_blank">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+                <a class="mr-2" href="" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+                <a class="mr-2" href="" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="mr-2" href="" target="_blank">
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                </a>
+            </div>
+        </mat-card>
+    </aside>
+</main>
+
+
+
+<app-news-letter></app-news-letter>
+
+<app-contact></app-contact>
+
+<app-footer></app-footer>
