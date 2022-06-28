@@ -1,1 +1,0 @@
-becayesoft-portfolio-blog
