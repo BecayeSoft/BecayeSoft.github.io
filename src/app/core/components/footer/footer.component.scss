@@ -1,0 +1,21 @@
+.footer-bg {
+  background-color: #151515;
+  background-image: url('../../../../assets/images/contact.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  padding-top: 13.2rem;
+  // padding-bottom: 12rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.footer-bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  background-color: #070606;
+}

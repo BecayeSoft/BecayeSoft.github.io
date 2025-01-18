@@ -1,0 +1,1 @@
+export const AVATAR = 'assets/images/avatar.jpg';

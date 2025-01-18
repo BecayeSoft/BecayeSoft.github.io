@@ -1,0 +1,20 @@
+<!-- small -->
+<ng-container *ngIf="size == 'small'">
+    <mat-card class="text-white bg-rose-700 shadow-lg rounded-lg max-w-xs">
+        {{ content }}
+    </mat-card>
+</ng-container>
+
+<!-- Medium -->
+<ng-container *ngIf="size == 'medium'">
+    <mat-card class="text-white bg-rose-700 shadow-lg rounded-lg max-w-md">
+        {{ content }}
+    </mat-card>
+</ng-container>
+
+<!-- Large -->
+<ng-container *ngIf="size == 'large'">
+    <mat-card class="text-white bg-rose-700 shadow-lg rounded-lg max-w-xl">
+        {{ content }}
+    </mat-card>
+</ng-container>

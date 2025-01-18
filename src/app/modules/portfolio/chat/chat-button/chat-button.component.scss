@@ -1,0 +1,20 @@
+#chat-button {
+    background-color: #881337;
+    // width: 4rem !important;
+
+    animation: pulse 1.5s infinite;
+    animation-delay: 0.5s; /* Add a delay to stagger the animation */
+}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.1);
+}
+100% {
+    transform: scale(1);
+}
+}
+  

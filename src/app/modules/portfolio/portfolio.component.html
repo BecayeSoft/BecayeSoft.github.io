@@ -1,0 +1,1128 @@
+<div class="cursor"></div>
+<header>
+    <!-- Nav -->
+    <!-- Smartphones -->
+    <div id="mobile-menu-wrapper" style="padding-left: 2.5rem;"
+        class="sm:hidden z-20 absolute left-0 right-0 top-0 pt-5 w-screen h-screen text-white text-base ">
+        <button (click)="toggleSmartphoneMenu()">
+            <svg id="menu-button" class="w-9 h-9" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z" />
+            </svg>
+        </button>
+        <div class="flex flex-col" id="mobile-menu">
+            <a class="mt-4 cursor-pointer" href="#work">
+                <span>My projects</span>
+            </a>
+            <a class="mt-4 cursor-pointer" href="#about">
+                <span>About Me</span>
+            </a>
+            <a class="mt-4 cursor-pointer" (click)="openSnackBar()">
+                <span>My Blog</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Tablets & Above -->
+    <div class="hidden sm:block z-20 absolute left-0 right-0 m-auto w-fit top-4 text-white text-base ">
+        <a href="#work">
+            <span class="mr-4 lg:mr-6 cursor-pointer">My projects</span>
+        </a>
+        <a href="#about">
+            <span class="mr-4 lg:mr-6 cursor-pointer">About Me</span>
+        </a>
+        <!-- <a (click)="openSnackBar()"> -->
+        <a routerLink="/blog">
+            <!-- <span class="cursor-pointer">My Blog</span> -->
+        </a>
+    </div>
+</header>
+
+<main class="bg-black text-white">
+
+    <app-chat-button></app-chat-button>
+    
+    <div>
+        <!-- Hero -->
+        <section class="h-screen flex items-center parallax relative" id="hero">
+            <!-- Vertical line 1 -->
+            <div class="absolute left-1/2 top-20 z-20">
+                <div class="w-0.5 bg-white mt-5 mb-5 m-auto" id="vertical-line1"></div>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="p-10 z-20">
+                <h3 class="text-base md:p-1">Data Scientist · Master's in AI<br>
+                    Writer on Medium</h3>
+                <h1 class="text-2xl md:text-4xl lg:text-6xl font-thin" id="my-name">
+                    console.log(name)
+                </h1>
+            </div>
+
+            <!-- Vertical line 2 -->
+            <div class="absolute left-1/2 lg:top-3/4" style="top: 80%">
+                <div class="w-0.5 bg-white mt-16 mb-5 m-auto" id="vertical-line2"></div>
+            </div>
+        </section>
+
+        <!-- My work -->
+        <section class="sm:p-2 lg:p-5 xl:p-10 pb-10 sm:pb-20 parallax relative" id="work">
+            <div class="overlay opacity-50"></div>
+            <div class="xl:w-9/12 m-auto">
+
+
+                <!-- Professional Experience -->
+                <!-- <div class="text-center pt-5"> -->
+                <div class="text-left py-5">
+                    <h1 class="work-title text-2xl sm:text-4xl">Professional Experience</h1>
+                </div>
+
+                <!-- Timeline 16: CIMA+ Permanent -->
+                <div class="relative py-2 ml-8 sm:ml-16">
+
+                    <!-- Vertical line -->
+                    <div
+                       class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div>
+                   <!-- Smartphones Only -->
+                   <!-- First Project (Height too long) -->
+                   <!-- <div style="width: 1px;"
+                       class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div> -->
+
+                   <!-- Horizontal line -->
+                   <!-- TODO: HORIZONTALLINE HERE -->
+
+                   <div class="relative flex flex-auto -ml-12">
+                       <!-- Timeline Icon -->
+                       
+                       <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                            viewBox="0 0 512 512" fill="#e11d48" height="16px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3 lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;"><g _ngcontent-jga-c98="" id="SVGRepo_bgCarrier" stroke-width="0"></g><g _ngcontent-jga-c98="" id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g _ngcontent-jga-c98="" id="SVGRepo_iconCarrier"><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M434.863,126.093V77.137h-48.956V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391 v77.137H77.137v48.956H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v48.956h48.956V512 h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h48.956v-48.956H512v-33.391 h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.39H434.863z M401.473,401.471h-0.001H110.529 V110.529h290.944V401.471z"></path></g></g><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M375.773,229.532c0-22.913-14.194-42.903-34.426-51.239c-1.374-26.935-23.718-48.426-50.987-48.426 c-13.221,0-25.283,5.052-34.36,13.325c-9.077-8.273-21.139-13.325-34.36-13.325c-27.27,0-49.615,21.491-50.987,48.426 c-20.234,8.336-34.426,28.326-34.426,51.239c0,9.577,2.445,18.593,6.742,26.459c-4.391,8.051-6.742,17.113-6.742,26.478 c-0.001,23.125,14.25,42.974,34.428,51.253c1.381,26.928,23.722,48.411,50.986,48.411c13.221,0,25.283-5.052,34.36-13.325 c9.077,8.273,21.139,13.325,34.36,13.325c27.265,0,49.606-21.483,50.986-48.411c20.176-8.28,34.428-28.129,34.428-51.253 c0-9.366-2.351-18.428-6.742-26.478C373.328,248.124,375.773,239.108,375.773,229.532z M239.304,331.078 c0,9.74-7.924,17.664-17.664,17.664c-7.943,0-14.674-5.271-16.889-12.497c10.656-2.612,20.43-8.341,27.914-16.604l-24.749-22.417 c-4.226,4.667-10.018,7.237-16.308,7.237c-12.127,0-21.992-9.866-21.992-21.992c0-0.697,0.033-1.389,0.098-2.076 c6.719,2.904,14.12,4.521,21.895,4.521v-33.391c-12.127,0-21.992-9.866-21.992-21.993c-0.001-7.907,4.25-14.938,10.63-18.817 c5.774,8.031,13.85,14.415,23.463,18.021l11.727-31.264c-6.855-2.571-11.461-9.222-11.461-16.549 c0-9.74,7.924-17.664,17.664-17.664c9.74,0,17.664,7.924,17.664,17.664V331.078z M342.285,280.393 c0.065,0.687,0.098,1.379,0.098,2.076c0,12.127-9.866,21.992-21.993,21.992c-6.289,0-12.081-2.57-16.307-7.237l-24.748,22.417 c7.485,8.263,17.258,13.993,27.914,16.604c-2.215,7.227-8.947,12.497-16.889,12.497c-9.74,0-17.664-7.924-17.664-17.664V180.922 c0-9.74,7.924-17.664,17.664-17.664c9.739,0,17.664,7.924,17.664,17.664c0,7.327-4.606,13.978-11.461,16.549l11.727,31.264 c9.613-3.606,17.688-9.991,23.463-18.021c6.38,3.879,10.631,10.911,10.631,18.817c0,12.127-9.866,21.993-21.993,21.993v33.391 C328.164,284.915,335.566,283.297,342.285,280.393z"></path></g></g></g>
+                        </svg>
+
+                       <!-- Timeline Date -->
+                       <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                           <p>January 2024 - Now</p>
+                       </div>
+                   </div>
+
+
+                    <!-- Experience 2: CIMA+ -->
+                    <div class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                        <div class="reveal-project">
+                            <span
+                                class="block mb-1 border border-rose-600 lg:text-lg text-center 900 rounded px-1 w-52">
+                                Permanent @ CIMA+
+                            </span>
+                            <h4 class="sm:text-2xl lg:text-3xl">Data Scientist Junior</h4>
+                            <ul class="list-disc list-inside ml-3 mb-3 sm:text-md lg:text-lg">
+                                <li>Hang on! I will update this once I'm done with my cup tea 🍵</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Timeline 15: CIMA+ Contract -->
+                <div class="relative py-2 ml-8 sm:ml-16">
+
+                    <!-- Vertical line -->
+                    <div
+                       class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div>
+                   <!-- Smartphones Only -->
+                   <!-- First Project (Height too long) -->
+                   <!-- <div style="width: 1px;"
+                       class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div> -->
+
+                   <!-- Horizontal line -->
+                   <!-- TODO: HORIZONTALLINE HERE -->
+
+                   <div class="relative flex flex-auto -ml-12">
+                       <!-- Timeline Icon -->
+                       
+                       <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                            viewBox="0 0 512 512" fill="#e11d48" height="16px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3 lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;"><g _ngcontent-jga-c98="" id="SVGRepo_bgCarrier" stroke-width="0"></g><g _ngcontent-jga-c98="" id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g _ngcontent-jga-c98="" id="SVGRepo_iconCarrier"><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M434.863,126.093V77.137h-48.956V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391 v77.137H77.137v48.956H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v48.956h48.956V512 h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h48.956v-48.956H512v-33.391 h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.39H434.863z M401.473,401.471h-0.001H110.529 V110.529h290.944V401.471z"></path></g></g><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M375.773,229.532c0-22.913-14.194-42.903-34.426-51.239c-1.374-26.935-23.718-48.426-50.987-48.426 c-13.221,0-25.283,5.052-34.36,13.325c-9.077-8.273-21.139-13.325-34.36-13.325c-27.27,0-49.615,21.491-50.987,48.426 c-20.234,8.336-34.426,28.326-34.426,51.239c0,9.577,2.445,18.593,6.742,26.459c-4.391,8.051-6.742,17.113-6.742,26.478 c-0.001,23.125,14.25,42.974,34.428,51.253c1.381,26.928,23.722,48.411,50.986,48.411c13.221,0,25.283-5.052,34.36-13.325 c9.077,8.273,21.139,13.325,34.36,13.325c27.265,0,49.606-21.483,50.986-48.411c20.176-8.28,34.428-28.129,34.428-51.253 c0-9.366-2.351-18.428-6.742-26.478C373.328,248.124,375.773,239.108,375.773,229.532z M239.304,331.078 c0,9.74-7.924,17.664-17.664,17.664c-7.943,0-14.674-5.271-16.889-12.497c10.656-2.612,20.43-8.341,27.914-16.604l-24.749-22.417 c-4.226,4.667-10.018,7.237-16.308,7.237c-12.127,0-21.992-9.866-21.992-21.992c0-0.697,0.033-1.389,0.098-2.076 c6.719,2.904,14.12,4.521,21.895,4.521v-33.391c-12.127,0-21.992-9.866-21.992-21.993c-0.001-7.907,4.25-14.938,10.63-18.817 c5.774,8.031,13.85,14.415,23.463,18.021l11.727-31.264c-6.855-2.571-11.461-9.222-11.461-16.549 c0-9.74,7.924-17.664,17.664-17.664c9.74,0,17.664,7.924,17.664,17.664V331.078z M342.285,280.393 c0.065,0.687,0.098,1.379,0.098,2.076c0,12.127-9.866,21.992-21.993,21.992c-6.289,0-12.081-2.57-16.307-7.237l-24.748,22.417 c7.485,8.263,17.258,13.993,27.914,16.604c-2.215,7.227-8.947,12.497-16.889,12.497c-9.74,0-17.664-7.924-17.664-17.664V180.922 c0-9.74,7.924-17.664,17.664-17.664c9.739,0,17.664,7.924,17.664,17.664c0,7.327-4.606,13.978-11.461,16.549l11.727,31.264 c9.613-3.606,17.688-9.991,23.463-18.021c6.38,3.879,10.631,10.911,10.631,18.817c0,12.127-9.866,21.993-21.993,21.993v33.391 C328.164,284.915,335.566,283.297,342.285,280.393z"></path></g></g></g>
+                        </svg>
+
+                       <!-- Timeline Date -->
+                       <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                           <p>November 2023 - January 2024</p>
+                       </div>
+                   </div>
+
+                    <!-- Experience 2: CIMA+ -->
+                    <div class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                        <div class="reveal-project">
+                            <span
+                                class="block mb-1 border border-rose-600 lg:text-lg text-center 900 rounded px-1 w-52">
+                                Contract @ CIMA+
+                            </span>
+                            <h4 class="sm:text-2xl lg:text-3xl">Data Scientist Junior</h4>
+                            <ul class="list-disc list-inside ml-3 mb-3 sm:text-md lg:text-lg">
+                                <li>Automated Data Cleaning of more than 277,000 records.</li>
+                                <li>Leveraged GPT-4 to analyse textual data.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Timeline 14: CIMA+ Internship -->
+                <div class="relative py-2 ml-8 sm:ml-16">
+
+                    <!-- Vertical line -->
+                    <div
+                       class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div>
+                   <!-- Smartphones Only -->
+                   <!-- First Project (Height too long) -->
+                   <!-- <div style="width: 1px;"
+                       class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div> -->
+
+                   <!-- Horizontal line -->
+                   <!-- TODO: HORIZONTALLINE HERE -->
+
+                   <div class="relative flex flex-auto -ml-12">
+                       <!-- Timeline Icon -->
+                       
+                       <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                            viewBox="0 0 512 512" fill="#e11d48" height="16px" width="26px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3 lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;"><g _ngcontent-jga-c98="" id="SVGRepo_bgCarrier" stroke-width="0"></g><g _ngcontent-jga-c98="" id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g _ngcontent-jga-c98="" id="SVGRepo_iconCarrier"><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M434.863,126.093V77.137h-48.956V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391v77.137h-42.083V0h-33.391 v77.137H77.137v48.956H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v42.083H0v33.391h77.137v48.956h48.956V512 h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h42.083V512h33.391v-77.137h48.956v-48.956H512v-33.391 h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.391h-77.137v-42.083H512v-33.39H434.863z M401.473,401.471h-0.001H110.529 V110.529h290.944V401.471z"></path></g></g><g _ngcontent-jga-c98=""><g _ngcontent-jga-c98=""><path _ngcontent-jga-c98="" d="M375.773,229.532c0-22.913-14.194-42.903-34.426-51.239c-1.374-26.935-23.718-48.426-50.987-48.426 c-13.221,0-25.283,5.052-34.36,13.325c-9.077-8.273-21.139-13.325-34.36-13.325c-27.27,0-49.615,21.491-50.987,48.426 c-20.234,8.336-34.426,28.326-34.426,51.239c0,9.577,2.445,18.593,6.742,26.459c-4.391,8.051-6.742,17.113-6.742,26.478 c-0.001,23.125,14.25,42.974,34.428,51.253c1.381,26.928,23.722,48.411,50.986,48.411c13.221,0,25.283-5.052,34.36-13.325 c9.077,8.273,21.139,13.325,34.36,13.325c27.265,0,49.606-21.483,50.986-48.411c20.176-8.28,34.428-28.129,34.428-51.253 c0-9.366-2.351-18.428-6.742-26.478C373.328,248.124,375.773,239.108,375.773,229.532z M239.304,331.078 c0,9.74-7.924,17.664-17.664,17.664c-7.943,0-14.674-5.271-16.889-12.497c10.656-2.612,20.43-8.341,27.914-16.604l-24.749-22.417 c-4.226,4.667-10.018,7.237-16.308,7.237c-12.127,0-21.992-9.866-21.992-21.992c0-0.697,0.033-1.389,0.098-2.076 c6.719,2.904,14.12,4.521,21.895,4.521v-33.391c-12.127,0-21.992-9.866-21.992-21.993c-0.001-7.907,4.25-14.938,10.63-18.817 c5.774,8.031,13.85,14.415,23.463,18.021l11.727-31.264c-6.855-2.571-11.461-9.222-11.461-16.549 c0-9.74,7.924-17.664,17.664-17.664c9.74,0,17.664,7.924,17.664,17.664V331.078z M342.285,280.393 c0.065,0.687,0.098,1.379,0.098,2.076c0,12.127-9.866,21.992-21.993,21.992c-6.289,0-12.081-2.57-16.307-7.237l-24.748,22.417 c7.485,8.263,17.258,13.993,27.914,16.604c-2.215,7.227-8.947,12.497-16.889,12.497c-9.74,0-17.664-7.924-17.664-17.664V180.922 c0-9.74,7.924-17.664,17.664-17.664c9.739,0,17.664,7.924,17.664,17.664c0,7.327-4.606,13.978-11.461,16.549l11.727,31.264 c9.613-3.606,17.688-9.991,23.463-18.021c6.38,3.879,10.631,10.911,10.631,18.817c0,12.127-9.866,21.993-21.993,21.993v33.391 C328.164,284.915,335.566,283.297,342.285,280.393z"></path></g></g></g>
+                        </svg>
+
+                       <!-- Timeline Date -->
+                       <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                           <p>May 2023 - November 2023</p>
+                       </div>
+                   </div>
+
+
+                    <!-- Experience 2: CIMA+ -->
+                    <div class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                        <div class="reveal-project">
+                            <span
+                                class="block mb-1 border border-rose-600 lg:text-lg text-center 900 rounded px-1 w-52">
+                                Co-op @ CIMA+
+                            </span>
+                            <h4 class="sm:text-2xl lg:text-3xl">Data Scientist Intern</h4>
+                            <ul class="list-disc list-inside ml-3 mb-3 sm:text-md lg:text-lg">
+                                <li>Ensured data quality.</li>
+                                <li>Built, deployed and integrated a machine learning model.</li>
+                                <li>Built an MLOps pipeline to ensure seamless re-training and deployment.</li>
+                                <li>Ensured ethical behavior and interpretability of the model.</li>
+                                <li>Leveraged pre-trained models to derive insights from textual data.</li>
+                                <!-- <li>Utilized existing research and collaborated with experts to carefully select relevant data</li>
+                                <li>Achieved a high attrition detection rate of 91% through the developed model</li>
+                                <li>Carefully evaluated the model on unseen data using ROC, precision, and calibration curves to address data imbalance</li>
+                                <li>Implemented explainability and interpretability techniques to establish trust in the model's predictions</li>
+                                <li>Configured a pipeline on Azure ML for efficient inference</li>
+                                <li>Extracted valuable insights on employees' sentiment using NLP analysis</li>
+                                <li>Thoroughly documented every aspect of the project</li>
+                                <li>Wrote code with exceptional clarity, making it easily understandable for any individual</li>
+                                <li>Presented the results in a simplified manner to ensure they are understandable to everyone</li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Timeline 13: Front-end Internship -->
+                <div class="relative py-14 ml-8 sm:ml-16">
+
+                    <!-- Vertical line -->
+                    <!-- <div
+                       class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div> -->
+                   <!-- Smartphones Only -->
+                   <!-- First Project (Height too long) -->
+                   <!-- <div style="width: 1px;"
+                       class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                   </div> -->
+
+                   <!-- Horizontal line -->
+                   <!-- TODO: HORIZONTALLINE HERE -->
+
+                   <div class="relative flex flex-auto -ml-12">
+                       <!-- Timeline Icon -->
+                       <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                       fill="#e11d48" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve" stroke="#eb4034"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M245,0C109.69,0,0,109.69,0,245s109.69,245,245,245s245-109.69,245-245S380.31,0,245,0z M245,459.375 c-118.206,0-214.375-96.168-214.375-214.375c0-118.206,96.169-214.375,214.375-214.375S459.375,126.794,459.375,245 C459.375,363.207,363.206,459.375,245,459.375z"></path> <polygon points="95.583,258.914 203.967,306.033 203.967,275.528 128.362,245.546 203.967,216.641 203.967,185.911 95.583,232.82 "></polygon> <polygon points="213.986,326.744 236.312,326.744 275.894,163.256 253.135,163.256 "></polygon> <polygon points="285.928,216.431 361.638,245.86 285.928,275.633 285.928,306.153 394.416,258.914 394.416,233.03 285.928,186.12 "></polygon> </g> </g>
+                       </svg>
+
+                       <!-- Timeline Date -->
+                       <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                           <p>January - June 2022</p>
+                       </div>
+                   </div>
+
+
+                    <!-- Experience 1: E-Ambition -->
+                    <div class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                        <div class="reveal-project">
+                            <span
+                                class="block mb-1 border border-rose-600 lg:text-lg text-center 900 rounded px-1 w-56">
+                                Internship @ E-Ambition
+                            </span>
+                            <h4 class="sm:text-2xl lg:text-3xl">Angular Developer Intern</h4>
+                            <ul class="list-disc list-inside ml-3 mb-3 sm:text-md lg:text-lg">
+                                <li>Collaborated with software engineers to build an appointment management app.</li>
+                                <li>Worked on core functionalities of the app such as a scheduler, a calendar,
+                                    a patient search engine.</li>
+                                <li>Built the front-end to create appointments, manage patients, and more.</li>
+                                <li>Implemented CRUD (reate, Read, Update, Delete) functionalities for appointments, patients and practitioners.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Personal Projects -->
+                <!-- <div class="text-center mt-16"> -->
+                <div class="text-left mt-16">
+                    <h1 class="work-title text-2xl sm:text-4xl">Projects</h1>
+                    <h2 class="work-title">
+                        A glimpse of what I do...
+                    </h2>
+                </div>
+
+                <!-- Projects -->
+                <div class="mt-10 space-y-5 sm:space-y-20 text-center sm:text-left">
+
+                    <!-- Data Science Projects -->
+                    <!-- <app-data-science></app-data-science> -->
+
+                    <!-- Timeline 12: Text Generation -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
+                            </svg>
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>December 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 12: Text Generation -->
+                        <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-36 sm:w-44">
+                                        Machine Learning
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl">Loan Eligibility Assessment</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        An application that uses a machine learning model to forecast loan eligibility.
+                                        The application not only generates SHAP (Shapley Additive exPlanations) explanations 
+                                        but also utilizes GPT-3.5 to produce a clear report explaining the model's decision
+                                        for a specific loan application.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/Loan-Eligibility-Modeling"
+                                        mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </figcaption>
+                            <img alt="Text generation project"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max m-auto lg:ml-2 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/loan-eligibility-modeling.png">
+                        </figure>
+
+                    </div>
+                    
+                    <!-- Timeline 12: Text Generation -->
+                    <!-- <div class="relative py-2 ml-8 sm:ml-16"> -->
+
+                        <!-- Vertical line -->
+                        <!-- <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <!-- <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <!-- <div class="relative flex flex-auto -ml-12"> -->
+                            <!-- Timeline Icon -->
+                            <!-- <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
+                            </svg> -->
+
+                            <!-- Timeline Date -->
+                            <!-- <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>July 2023</p>
+                            </div>
+                        </div> -->
+
+                        <!-- Project 12: Text Generation -->
+                        <!-- <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-36 sm:w-40">
+                                        Text Generation
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl">Moby-Dick</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        An LSTM that takes input text and generates the next word.
+                                        The model was trained on the book "Moby-Dick" using TensorFlow and Keras.
+                                        The LSTM was then compared to a pre-trained transformer.
+                                    </p>
+
+                                    <a href="https://www.kaggle.com/becayebald/text-generation-with-lstm-and-transformer"
+                                        mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </figcaption>
+                            <img alt="Text generation project"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max m-auto lg:ml-2 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/text-generation.jpg">
+                        </figure>
+
+                    </div> -->
+
+                    <!-- Timeline 11: Gun Detection Project -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
+                            </svg>
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>April 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 11: Gun Detection -->
+                        <figure class="sm:pt-8 flex flex-col-reverse sm:flex-row sm:space-x-4 lg:space-x-10">
+                            <img alt="Gun detection project"
+                                class="w-44 m-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/gun-detection.png">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 mt-3 sm:mt-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-36 sm:w-40">
+                                        Object Detection
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl">Guns-Detections-Project</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        A YOLOv8 model for detecting guns in images and videos served via a Flask API,
+                                        which could be accessed from a web app. The API was deployed on a scalable AWS
+                                        container.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/Guns-Detections-Project" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <!-- Timeline 10: Smart Eye  -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" height="800" width="1200" xml:space="preserve" y="0"
+                                x="0" id="Layer_1" version="1.1" viewBox="-45.10065 -44.95 390.8723 269.7">
+                                <style id="style1855" type="text/css">
+                                    .st1 {
+                                        fill-rule: evenodd;
+                                        clip-rule: evenodd;
+                                        fill: #f90
+                                    }
+                                </style>
+                                <g transform="translate(-1.668 -1.1)" id="g1865">
+                                    <path id="path1857"
+                                        d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.2 1.8 4.6 3.2 7.2.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3L83.2 92c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2-4.9-4.8-7.4-11.2-7.4-19.2 0-8.5 3-15.4 9.1-20.6 6.1-5.2 14.2-7.8 24.5-7.8 3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3-3.7.9-7.3 2-10.8 3.4-1.6.7-2.8 1.1-3.5 1.3-.7.2-1.2.3-1.6.3-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5.5-.7 1.4-1.4 2.8-2.1 3.5-1.8 7.7-3.3 12.6-4.5C41 1.9 46.2 1.3 51.7 1.3c11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zM45.8 81.6c3.3 0 6.7-.6 10.3-1.8 3.6-1.2 6.8-3.4 9.5-6.4 1.6-1.9 2.8-4 3.4-6.4.6-2.4 1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7-3.2-.4-6.3-.6-9.4-.6-6.7 0-11.6 1.3-14.9 4-3.3 2.7-4.9 6.5-4.9 11.5 0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-3.9L96.7 10.2c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 3.9l16.8 66.2 15.6-66.2c.5-2 1.1-3.3 1.9-3.9.8-.6 2.2-1 4-1h8c1.9 0 3.2.3 4 1 .8.6 1.5 2 1.9 3.9l15.8 67 17.3-67c.6-2 1.3-3.3 2-3.9.8-.6 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6-.1.6-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.3-2.1 3.9-.8.6-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4-1-.8-.7-1.5-2-1.9-4L156 23l-15.4 64.4c-.5 2-1.1 3.3-1.9 4-.8.7-2.2 1-4 1zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8-5-1.2-8.9-2.5-11.5-4-1.6-.9-2.7-1.9-3.1-2.8-.4-.9-.6-1.9-.6-2.8v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3.6.2 1.5.6 2.5 1 3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3 3.4-2.2 5.2-5.4 5.2-9.5 0-2.8-.9-5.1-2.7-7-1.8-1.9-5.2-3.6-10.1-5.2L246 52c-7.3-2.3-12.7-5.7-16-10.2-3.3-4.4-5-9.3-5-14.5 0-4.2.9-7.9 2.7-11.1 1.8-3.2 4.2-6 7.2-8.2 3-2.3 6.4-4 10.4-5.2 4-1.2 8.2-1.7 12.6-1.7 2.2 0 4.5.1 6.7.4 2.3.3 4.4.7 6.5 1.1 2 .5 3.9 1 5.7 1.6 1.8.6 3.2 1.2 4.2 1.8 1.4.8 2.4 1.6 3 2.5.6.8.9 1.9.9 3.3v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8-3.1 1.9-4.7 4.8-4.7 8.9 0 2.8 1 5.2 3 7.1 2 1.9 5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6 3.1 4.1 4.6 8.8 4.6 14 0 4.3-.9 8.2-2.6 11.6-1.8 3.4-4.2 6.4-7.3 8.8-3.1 2.5-6.8 4.3-11.1 5.6-4.5 1.4-9.2 2.1-14.3 2.1z"
+                                        fill="#252f3e" />
+                                    <g id="g1863">
+                                        <path id="path1859"
+                                            d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"
+                                            class="st1" />
+                                        <path id="path1861"
+                                            d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"
+                                            class="st1" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>April 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 10: Smart Eye -->
+                        <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 mt-3 sm:mt-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-40 sm:w-52">
+                                        AWS Computer Vision
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl mt-4">Smart Eye</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg">
+                                        A web application that uses images from cameras and sent
+                                        them to Amazon Rekognition to gather demographics data
+                                        on individuals and group them by age, gender, and emotions.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/SmartEye" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </figcaption>
+                            <img alt="Smart Eye"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  m-auto sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/smart-eye.png">
+                        </figure>
+
+                    </div>
+
+                    <!-- Timeline 9: Anti-bankruptcy  -->
+                    <!-- <div class="relative py-2 ml-8 sm:ml-16"> -->
+
+                    <!-- Vertical line -->
+                    <!-- <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+                    <!-- Smartphones Only -->
+                    <!-- First Project (Height too long) -->
+                    <!-- <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+
+                    <!-- Horizontal line -->
+                    <!-- TODO: HORIZONTALLINE HERE -->
+
+                    <!-- <div class="relative flex flex-auto -ml-12"> -->
+                    <!-- Timeline Icon -->
+                    <!-- <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
+                            </svg> -->
+
+                    <!-- Timeline Date -->
+                    <!-- <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>2023</p>
+                            </div>
+                        </div> -->
+
+                    <!-- Project 9 -->
+                    <!-- Bankruptcy Prediction -->
+                    <!-- <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <h4 class="sm:text-2xl lg:text-3xl">Bankruptcy Prediction</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        This project employs a supervised machine learning approach using historical
+                                        financial data to train an algorithm that predicts bankruptcy.
+                                        <br>Techniques such as SMOTE, feature selection, model selection, and
+                                        cross-validation were used.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/Anti-Bankruptcy/" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on Github
+                                    </a>
+                                </div>
+                            </figcaption>
+                            <img alt="Bankruptcy prediction project"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  ml-2 sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/bankruptcy.png">
+                        </figure> -->
+
+                    <!-- </div> -->
+
+
+                    <!-- Timeline 8: Netflix Movies Dashboard  -->
+                    <!-- <div class="relative py-2 ml-8 sm:ml-16"> -->
+
+                    <!-- Vertical line -->
+                    <!-- <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+                    <!-- Smartphones Only -->
+                    <!-- First Project (Height too long) -->
+                    <!-- <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div> -->
+
+                    <!-- Horizontal line -->
+                    <!-- TODO: HORIZONTALLINE HERE -->
+
+                    <!-- <div class="relative flex flex-auto -ml-12"> -->
+                    <!-- Timeline Icon -->
+                    <!-- <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" height="2467" width="2500" viewBox="0 0 60.3 59.5">
+                                <path d="M28.5 40.2h3.3v-9h8.3V28h-8.3v-9h-3.3v9h-8.2v3.2h8.2z" fill="#e8762d" />
+                                <path d="M13.2 53.2H16v-8h7.4v-2.5H16v-8.1h-2.8v8.1H5.8v2.5h7.4z" fill="#c72037" />
+                                <path d="M44.3 24.3h2.8v-8h7.5v-2.4h-7.5V5.8h-2.8v8.1h-7.4v2.4h7.4z" fill="#5b879b" />
+                                <path d="M29 59.5h2.4v-5.7h5.1v-2.1h-5.1V46H29v5.7h-5v2.1h5z" fill="#5c6692" />
+                                <path d="M13.3 24.3h2.6v-8.1h7.5v-2.3h-7.5V5.8h-2.6v8.1H5.8v2.3h7.5z" fill="#eb9129" />
+                                <path d="M52.8 36.3h2.4v-5.6h5.1v-2.2h-5.1v-5.6h-2.4v5.6h-5v2.2h5z" fill="#5c6692" />
+                                <path clip-rule="evenodd"
+                                    d="M44.3 53.2h2.8v-8h7.5v-2.5h-7.5v-8.1h-2.8v8.1h-7.4v2.5h7.4z" fill="#1f457e"
+                                    fill-rule="evenodd" />
+                                <path
+                                    d="M36.1 7.2V5.5h-5V0h-1.8v5.5h-5v1.7h5v5.5h1.8V7.2zM5 35.9h1.8v-5.5h5v-1.7h-5v-5.4H5v5.4H0v1.8l5-.1z"
+                                    fill="#7199a6" />
+                            </svg> -->
+
+                    <!-- Timeline Date -->
+                    <!-- <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>2023</p>
+                            </div>
+                        </div> -->
+
+                    <!-- Project 8 -->
+                    <!-- Netflix Movies Dashboard -->
+                    <!-- <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <img alt="Nextflix Dashboard"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  ml-2 sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/netflix-dashboard.png">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <h4 class="sm:text-2xl lg:text-3xl mt-4">Netflix Movies Dashboard</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        Netflix movies & TV shows presented in a beautfiul dashboard that represents
+                                        the brand's colors.
+                                    </p>
+
+                                    <a href="https://public.tableau.com/app/profile/becaye.balde/" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on Tableau
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure> -->
+
+                    <!-- </div> -->
+
+
+                    <!-- Timeline 6 -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="96px" height="96px">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z" />
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z" />
+                            </svg>
+
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>March 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <!-- LinkedIn Jobs Scraping -->
+                        <figure class="sm:pt-8 flex flex-col-reverse sm:flex-row sm:space-x-4 lg:space-x-10">
+                            <img alt="Hot dog competition project"
+                                class="w-56 max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  m-auto sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/jobs-scraping.png">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 mt-3 sm:mt-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-28 sm:w-36">
+                                        Scrapping
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl mt-4">LinkedIn Jobs Scraping</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        A bot that uses the Selenium library to retrieve job information from LinkedIn
+                                        and stored it in a SQL Server database for analysis.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/Jobs-Mystery/" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+
+                    <!-- Timeline 7 -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <div
+                            class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <div style="width: 1px;"
+                            class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+                        </div>
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                xmlns="http://www.w3.org/2000/svg" width="2500" height="1885"
+                                preserveAspectRatio="xMidYMid" viewBox="0 0 256 193">
+                                <defs>
+                                    <linearGradient id="a" x1="37.973%" x2="91.121%" y1="16.999%" y2="76.326%">
+                                        <stop offset="0%" stop-color="#C9CBCE" />
+                                        <stop offset="100%" stop-color="#7B7A81" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#a)"
+                                    d="M149.333 149.333c-53.333 0-98.659-26.713-98.659-58.713S90.667 32 144 32c67.357 0 98.572 25.911 98.572 57.911s-34.407 59.422-93.239 59.422M128 0C58.667 0 0 37.333 0 85.333c0 45.334 58.312 82.969 127.646 82.969 69.333 0 128.354-34.969 128.354-82.969C256 37.333 197.333 0 128 0" />
+                                <path fill="#2165B6"
+                                    d="M105.946 51.829v141.109h42.643v-54.875c10.661 0 17.011-2.328 23.986 10.452 10.661 18.292 23.987 44.423 23.987 44.423H247.2s-31.982-52.262-34.647-54.875c-4.915-5.227-10.661-5.227-18.656-7.84 15.991-2.613 30.899-9.248 36.082-23.464 4.531-13.065 3.998-29.685-5.714-40.83-8.411-8.819-17.042-14.1-38.364-14.1h-79.955zm42.643 29.388h27.984c6.636 0 11.993 6.533 11.993 13.065 0 6.533-5.33 13.066-11.993 13.066h-27.984V81.217z" />
+                            </svg>
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>January 2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 7 -->
+                        <!-- Hot dog Competition -->
+                        <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 mt-3 sm:mt-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-44 sm:w-56">
+                                        Scrapping · Storytelling
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl">Hot Dog Competiton</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        A data storytelling project in which I scraped and wrangled data from Wikipedia
+                                        and used graphics to present the story of a hot dog contest.
+                                    </p>
+
+                                    <a href="https://github.com/BecayeSoft/Hot-dog-contest" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View on Github
+                                    </a>
+                                </div>
+                            </figcaption>
+                            <img alt="Hot dog competition project"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  ml-2 sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/hot-dog.png">
+                        </figure>
+
+                    </div>
+
+
+                    <!-- Timeline 5 -->
+                    <div class="relative py-2 ml-8 sm:ml-16">
+
+                        <!-- Vertical line -->
+                        <!-- <div
+        class="hidden sm:block reveal-vertical-line absolute top-5 sm:-left-6 w-0.5 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+    </div> -->
+                        <!-- Smartphones Only -->
+                        <!-- First Project (Height too long) -->
+                        <!-- <div style="width: 1px;"
+        class="reveal-vertical-line-xs-first sm:hidden absolute top-5 -left-2 bg-gray-300 dark:bg-gray-600  timeline-vertical-line">
+    </div> -->
+
+                        <!-- Horizontal line -->
+                        <!-- TODO: HORIZONTALLINE HERE -->
+
+
+                        <!-- <div class="relative flex flex-auto -ml-12"> -->
+                        <!-- Timeline Icon -->
+                        <!-- <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+            viewBox="0 0 128 128">
+            <path fill="#68217a"
+                d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z" />
+        </svg> -->
+
+                        <!-- Timeline Date -->
+                        <!-- <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+            <p>2023</p>
+        </div>
+    </div> -->
+
+                        <div class="relative flex flex-auto -ml-12">
+                            <!-- Timeline Icon -->
+                            <svg class="reveal-project w-4.5 h-4.5 sm:w-9 sm:h-9 ml-4 mr-1 sm:-ml-3  lg:h-12 lg:w-12 lg:-ml-4 sm:mr-2"
+                                viewBox="0 0 128 128">
+                                <path fill="#68217a"
+                                    d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z" />
+                            </svg>
+
+
+                            <!-- Timeline Date -->
+                            <div class="reveal-project flex flex-col flex-auto justify-center items-start text-sm">
+                                <p>2023</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <!-- ETL on AIr Pollution -->
+                        <figure class="sm:pt-8 sm:flex sm:space-x-4 lg:space-x-10">
+                            <img alt="ELT on Air Pollution"
+                                class="w-auto max-h-52 sm:max-h-max max-w-11/12 sm:max-w-max  ml-2 sm:ml-0 sm:w-1/2 object-cover h-64 lg:h-80 xl:h-88 xl:object-fill  shadow-lg mt-4 reveal-project"
+                                src="../../../assets/portfolio/air-pollution/air-pollution.png">
+                            <figcaption class="flex items-center px-8 sm:px-0 sm:w-1/2">
+                                <div class="reveal-project">
+                                    <span
+                                        class="block m-auto sm:ml-0 mt-3 sm:mt-0 sm:mb-2 border border-rose-600 sm:text-lg sm:text-center 900 rounded px-1 w-28 sm:w-36">
+                                        ETL
+                                    </span>
+                                    <h4 class="sm:text-2xl lg:text-3xl">Air Pollution Analysis</h4>
+                                    <p class="leading-relaxed tracking-wide lg:text-lg lg:mt-4">
+                                        We used Microsoft SSDT along with SQL to extract and wrangle data on air
+                                        pollution
+                                        and stored it in a data warehouse to predict air pollution deaths per country.
+                                    </p>
+
+                                    <a routerLink="portfolio/air-pollution" mat-raised-button
+                                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                                        View Project
+                                    </a>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <!-- Web Development Projects -->
+
+                    <button *ngIf="!isWebDev" mat-raised-button (click)="toggleProject('web-development')"
+                        class="block m-auto lg:py-1 lg:px-2 lg:text-xl hover:opacity-80 text-white bg-rose-900">
+                        Show Software Development projects
+                    </button>
+                    <button *ngIf="isWebDev" mat-raised-button (click)="toggleProject('web-development')"
+                        class="block m-auto lg:py-1 lg:px-2 lg:text-xl hover:opacity-80 text-white bg-rose-900">
+                        Hide Software Development projects
+                    </button>
+                    <app-web-development *ngIf="isWebDev"></app-web-development>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <!-- <mat-divider class="bg-white rounded-lg h-0.5 mb-3 lg:mb-5 w-9/12 m-auto"></mat-divider> -->
+        <section id="about">
+            <div class="text-center sm:w-8/12 m-auto px-2 sm:px-0 pt-10 sm:pt-16 pb-10">
+                <h1 class="text-center lg:mt-12 text-2xl sm:text-3xl">
+                    About Me
+                </h1>
+                <div class="max-w-3xl m-auto text-base xl:text-lg leading-loose lg:mt-1 xl:mt-3">
+                    Passionate about Artificial Intelligence and Software Engineering.<br/>
+                    Adventurous traveller, ice-skating enthusiast, and a curious reader ✈️⛸️📚
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-3  gap-2 lg:gap-3 mt-8">
+                    <div>
+                        <img alt="Chichen Itza" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/chichen-itza.jpg">
+                    </div>
+                    <div>
+                        <img alt="Niagara Falls" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/niagara-falls.jpg">
+                    </div>
+                    <div>
+                        <img alt="Toronto Downtown" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/toronto-downtown.jpg">
+                    </div>
+                    <div>
+                        <img alt="Tulum Beach" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/tulum-beach.jpg">
+                    </div>
+                    <div>
+                        <img alt="Tulum Ruins" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/tulum-ruins.jpg">
+                    </div>
+                    <div>
+                        <img alt="Saint-Felicien Zoo" class="h-64 xl:h-72 2xl:h-96 w-full rounded-lg hover:scale-105 transition-transform duration-300"
+                            src="../../../assets/portfolio/travels/st-felicien-cabanas.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Writing & Projets -->
+        <section class="text-center">
+            <!-- <h2 class="text-lg lg:text-xl xl:text-2xl">A Medium·er and Github·er</h2> -->
+            <h2 class="text-lg lg:text-xl xl:text-2xl">Content creation</h2>
+            <!-- <h1 class="mb-0 mt-8 lg:mt-10"> -->
+            <!-- Parce qu'un code doit être élégant... -->
+            <!-- Medium·er and Github·er -->
+            <!-- </h1> -->
+            <div class="max-w-3xl m-auto text-base xl:text-lg leading-loose lg:mt-1 xl:mt-3">
+                I love sharing my knowledge. I write articles on 
+                <a class="text-rose-500" href="https://medium.com/@becaye-balde">
+                    Medium</a> and regularly share my code on 
+                    <a class="text-rose-500" href="https://github.com/BecayeSoft/Machine-Learning/">
+                    GitHub</a>.
+            </div>
+            <div class="overflow-hidden mt-5">
+                <p class="text-lg">
+                    <a href="https://medium.com/@becaye-balde" mat-raised-button
+                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900 mr-5">
+                        Medium
+                    </a>
+
+                    <a href="https://github.com/BecayeSoft/" mat-raised-button
+                        class="space-y-1 space-x-3 text-lg hover:opacity-80 text-white bg-rose-900">
+                        Github
+                    </a>
+            </div>
+        </section>
+
+        <!-- Creativity & Inspiration -->
+        <section class="text-center">
+            <h1 class="mb-0 mt-8 lg:mt-10">
+                <!-- Parce qu'un code doit être élégant... -->
+                Coding enthusiast &lt;/&gt;
+            </h1>
+            <div class="max-w-3xl m-auto text-base xl:text-lg leading-loose lg:mt-1 xl:mt-3">
+                It's more than a job, it's a passion...
+            </div>
+            <div class="overflow-hidden">
+                <img alt="Angular Code" class="max-h-112 m-auto transition-all duration-1000 hover:scale-110"
+                    src="assets/portfolio/code.png">
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="bg-black text-white">
+
+    <!-- Contact -->
+    <div class="pt-3 lg:pt-10 pb-3 lg:pb-10 text-center" id="contact">
+        <h1 class="mb-3 lg:mb-10 text-2xl sm:text-3xl">
+            <!-- Dites-moi bonjour ! -->
+            Say Hello!
+            <div class="inline-block" id="hellomoji">👋</div>
+        </h1>
+        <form action="https://formsubmit.co/5b5ffb736d66f4619f5daeabe15870b8" method="POST">
+            <!-- Template -->
+            <input type="hidden" name="_template" value="table">
+            <!-- Redirect and Captcha -->
+            <input name="_next" type="hidden" [value]="formSubmitRedirectURL">
+            <input name="_captcha" type="hidden" value="false">
+
+            <!-- Form Group Prevent Form Submission, so I place it here :) -->
+            <div class="w-10/12 sm:w-7/12 lg:w-128 m-auto" [formGroup]="contactForm">
+                <div class="flex flex-col lg:space-y-1">
+                    <mat-form-field class="h-22 sm:h-auto" [appearance]="'outline'" [color]="'accent'">
+                        <mat-label>Type your name</mat-label>
+                        <input matInput [formControlName]="'name'" name="name" type="text">
+                    </mat-form-field>
+                    <mat-form-field class="h-22 sm:h-auto" [appearance]="'outline'" [color]="'accent'">
+                        <mat-label>Type your e-mail</mat-label>
+                        <input [formControlName]="'email'" matInput name="email" placeholder="imawesome@email.com"
+                            type="email">
+                        <mat-error *ngIf="emailFormControl?.hasError('email')"
+                            class="hidden sm:block text-base sm:text-sm mt-36 sm:-mt-0.5">
+                            Email should look like: mamadou@gmail.com
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="h-22 sm:h-auto focus-within:h-32" [appearance]="'outline'"
+                        [color]="'accent'">
+                        <mat-label>What would you like to say?</mat-label>
+                        <mat-error *ngIf="messageFormControl?.hasError('required')"
+                            class="hidden sm:block text-base sm:text-sm mt-36 sm:-mt-0.5">
+                            Message required
+                        </mat-error>
+                        <textarea matInput [formControlName]="'message'" name="message"></textarea>
+                    </mat-form-field>
+                </div>
+
+                <mat-error *ngIf="emailFormControl?.hasError('email')" class="sm:hidden text-base">
+                    Email invalid
+                </mat-error>
+                <mat-error *ngIf="messageFormControl?.hasError('required')" class="sm:hidden text-base">
+                    Message invalid
+                </mat-error>
+
+                <!-- Valid Form Button -->
+                <button id="submitBtn" style="visibility: hidden;" (click)="onOpenThankYouSnackBar()"
+                    class="border-white border-2 py-1 pl-4.5 pr-5 lg:mt-3 rounded-md hover:border-rose-900 hover:bg-rose-900 hover:opacity-80 ease-in-out duration-500 cursor-pointer"
+                    type="submit">
+                    <span>
+                        <svg class="w-4 h-4" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                        </svg>
+                    </span>
+                </button>
+                <!-- Invalid Form Button -->
+                <!-- <button 
+                    class="border-white border-2 py-1 pl-4.5 pr-5 lg:mt-3 rounded-md"
+                    [hidden]="!emailFormControl.pristine && !emailFormControl.hasError('email')">
+                    <span>
+                        <svg class="w-4 h-4 valid-svg" fill="white" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                        </svg>
+                    </span>
+                </button> -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Social Media -->
+    <div class="p-6 pt-1">
+        <h1 class="text-center text-xl sm:text-2xl">
+            <!-- Ou retrouvez moi ailleurs -->
+            Or find me elsewhere
+        </h1>
+
+        <div class="w-full m-auto p-2 flex justify-center">
+            <a class="mr-3 bg-white" href="https://medium.com/@becaye-balde" target="_blank">
+                <svg class="hover:fill-rose-900 w-8 h-8" fill="white" viewBox="0 -55 256 256" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid" fill="#000000" stroke="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <path
+                                d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z"
+                                fill="#000000"> </path>
+                        </g>
+                    </g>
+                </svg>
+                <!-- <svg class="hover:fill-rose-900 w-8 h-8" fill="white" viewBox="0 -55 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z" fill="#ffffff"> </path> </g> </g></svg> -->
+            </a>
+            <a class="mr-3" href="https://github.com/BecayeSoft" target="_blank">
+                <svg class="hover:fill-rose-900 w-8 h-8" fill="white" viewBox="0 0 496 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>GitHub</title>
+                    <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a class="mr-3" href="https://www.linkedin.com/in/becaye-balde-806637189/" target="_blank">
+                <svg class="hover:fill-rose-900 w-8 h-8" fill="white" viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg>
+            </a>
+            <!-- <a class="mr-3" href="https://web.facebook.com/baldebecaye/" target="_blank">
+                <svg class="hover:fill-rose-900 w-8 h-8" fill="white" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Facebook</title>
+                    <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                </svg>
+            </a> -->
+            <!-- <a class="mr-3 sm-icon" href="https://wa.me/message/ZAFKZFDUIMKMN1" target="_blank">
+                <svg class="w-8 h-8" fill="white" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                    <title>WhatsApp</title>
+                    <path
+                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                </svg>
+            </a> -->
+        </div>
+
+        <app-copyrights></app-copyrights>
+    </div>
+</footer>
+

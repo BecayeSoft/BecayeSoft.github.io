@@ -1,0 +1,38 @@
+<section class="h-screen w-screen">
+    <div class="overlay"></div>
+
+    <div>
+        <div class="p-4 sm:p-16 relative mb-32">
+            <div class="text-white w-fit">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="text-3xl uppercase text-rose-800">Oups!</h2>
+                        <!-- <h2 class="text-3xl uppercase text-rose-800">Oops!</h2> -->
+                        <h1 class="text-5xl text-white">404</h1>
+                    </div>
+                    <app-logo></app-logo>
+                </div>
+                <div class="mt-6">
+                    <!-- <p class="text-2xl leading-loose">You have lost yourself outside of the becayeverse.</p> -->
+                    <p class="text-2xl sm:leading-loose">Vous vous êtes perdu hors du becayevers.</p>
+                    <!-- <p class="text-2xl">Visit the becayeverse by taking one of the flights below:</p> -->
+                    <p class="text-2xl">Embarquez pour le becayevers dans un des vols ci-dessous:</p>
+                </div>
+                <!--Travel Button-->
+                <div class="lg:flex">
+                    <button [routerLink]="'/'"
+                        class="block m-auto lg:m-0 p-3 mt-10 lg:mt-14 lg:mr-3 rounded-md opacity-90 bg-rose-800 hover:opacity-100 hover:shadow-lg text-xl">
+                        <!-- 🛸 Travel by spaceship -->
+                        🛸 Prendre le Vaisseau
+                    </button>
+                    <button routerLink="/"
+                        class="block m-auto lg:m-0 p-3 mt-3 lg:mt-14 opacity-90 rounded-md bg-rose-800 hover:opacity-100 hover:shadow-lg text-xl">
+                        <!-- 🚀 Travel by rocket -->
+                        🚀 Prendre la fusée
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

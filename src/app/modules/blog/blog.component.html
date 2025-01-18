@@ -1,0 +1,105 @@
+<!-- Header -->
+<header>
+    <app-header></app-header>
+</header>
+
+<!-- Hero section -->
+<section class="bg text-white">
+    <div class="overlay"></div>
+
+    <div class="relative">
+        <div class="absolute top-56 left-80 flex flex-col items-center">
+            <div class="h-56 text-7xl leading-snug capitalize">
+                <span>Welcome to</span>
+                <span class="block text-4xl">Becaye's blog</span>
+            </div>
+            <a href="blog#main">
+                <mat-icon class="text-6xl" aria-hidden="false" aria-label="Scroll down arrow">
+                    keyboard_double_arrow_down</mat-icon>
+            </a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <!-- <div class="absolute top-0 left-0 bottom-0 right-0 opacity-20 bg-black"></div> -->
+
+    <!-- Image copyrights -->
+    <!-- <p class="absolute right-0 bottom-0">
+        <a
+            href="https://unsplash.com/s/photos/watch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            (Photo by Unsplash)
+        </a>
+    </p> -->
+</section>
+
+<main class="w-9/12 m-auto" role="main" id="main">
+    <!-- Title -->
+    <section>
+        <div class="mt-5">
+            <h1 class="text-center text-4xl">Posts by categories</h1>
+            <p>Find all my posts here.</p>
+        </div>
+    </section>
+
+
+    <!-- Posts vertical section -->
+    <section class="pb-40">
+        <div>
+
+            <!-- Search-->
+            <div class="w-144">
+                <app-search></app-search>
+            </div>
+
+            <!-- Info -->
+            <div class="relative text-white bg-cyan-900 w-fit rounded-lg">
+                <div class="z-20 absolute -left-2 -top-2 w-5 h-5 rounded-2xl bg-sky-400 text-center align-middle">
+                    <i class="fa-solid fa-info mt-1"></i>
+                    <!-- <i class="fa-light fa-circle-info"></i> -->
+                </div>
+                <app-info-message [size]="'large'"
+                    [content]="' You can display posts related to a specific category by clicking on the category name.'">
+                </app-info-message>
+            </div>
+
+            <h2 class="mt-5">Categories</h2>
+            <div class="mb-5">
+                <ng-container *ngFor="let category of categories">
+                    <a (click)="onSelectCategory(category)">
+                        <span class="cursor-pointer underline decoration-sky-500 mr-4 cur">
+                            {{ category }}
+                        </span>
+                    </a>
+                </ng-container>
+            </div>
+
+            <div>
+                <!-- Card grid -->
+                <div class="grid grid-cols-3 gap-4 m-auto">
+                    <ng-container *ngFor="let post of postsByCategory">
+                        <!-- Card-->
+                        <ng-container *ngIf="postsByCategory.length">
+                            <app-post-card
+                                class="cursor-pointer"
+                                (click)="onSelectPost(post.id)"
+                                [image]="post.image" [first_tag]="post.tags[0]"
+                                [second_tag]="post ? post.tags[1] : ''" [title]="post.title"
+                                [description]="post.description" [avatar]="avatar">
+                            </app-post-card>
+                        </ng-container>
+                    </ng-container>
+                </div>
+                <!-- If category is empty -->
+                <ng-container *ngIf="!postsByCategory.length">
+                    <app-info-message [size]="'small'"
+                        [content]="'There is no post is this category yet! Come back soon :)'">
+                    </app-info-message>
+                </ng-container>
+            </div>
+        </div>
+    </section>
+</main>
+
+<app-news-letter></app-news-letter>
+
+<app-footer></app-footer>

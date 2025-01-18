@@ -1,0 +1,75 @@
+<!-- Header -->
+<app-header></app-header>
+
+<!-- Hero section -->
+<section class="bg text-white">
+    <div class="overlay"></div>
+
+    <div class="relative">
+        <div class="absolute top-56 left-80">
+            <div class="h-56 text-7xl leading-snug capitalize">
+                <span>Welcome to</span>
+                <span class="block text-4xl">the magical world of coding</span>
+            </div>
+            <h2 class="text-lg">All the latest here</h2>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <!-- <div class="absolute top-0 left-0 bottom-0 right-0 opacity-20 bg-black"></div> -->
+
+    <!-- Image copyrights -->
+    <p class="absolute right-0 bottom-0">
+        <a
+            href="https://unsplash.com/s/photos/watch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            (Photo by Unsplash)
+        </a>
+    </p>
+</section>
+
+<main class="w-9/12 m-auto" role="main">
+    <!-- Search-->
+    <!-- <section>
+        <div class="mt-5 w-9/12 m-auto">
+            <div class="w-144">
+                <app-search></app-search>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Posts vertical section -->
+    <section class="pb-40">
+        <div class="mt-5">
+            <h4 class="mb-5">Latest posts</h4>
+
+            <div>
+                <div class="grid grid-cols-3 gap-4 m-auto">
+                    <ng-container *ngFor="let i of nloop">
+                        <!-- Card-->
+                        <app-post-card
+                            [image]="'https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg'"
+                            [first_tag]="'Technology'" [second_tag]="'Angular'"
+                            [title]="'Why is the Tesla Cybertruck designed the way it is?'"
+                            [description]="'An exploration into the truck\'s polarising design proposed by Becaye the first hybrid son of Michaelson'"
+                            [avatar]="'https://scontent.frba4-1.fna.fbcdn.net/v/t1.6435-9/139049991_4923080744429164_5557414686745973267_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeE1aDmzVKI7UdoLsurvagCSZwICB1klS7FnAgIHWSVLsVndei41L5fwjdL1NAr6erEJrgS7dBIVqqYugM7V442C&_nc_ohc=gr88EsCOXgMAX8H_UpZ&_nc_ht=scontent.frba4-1.fna&oh=00_AT_H2gyRLy_Kht3QP7azXsw3-cqoK2VNYtoGh50Rw4ivqw&oe=62929C2F'">
+                        </app-post-card>
+                    </ng-container>
+                </div>
+            </div>
+
+            <div class="mt-7 text-right text-lg p-1 hover:opacity-80">
+                <a [routerLink]="'/blog'" mat-raised-button color="primary">
+                    <span class="underline decoration-sky-500">
+                        See More
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<app-news-letter></app-news-letter>
+
+<app-contact></app-contact>
+
+<app-footer></app-footer>
