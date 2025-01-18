@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-    svg {
-      @apply hover:fill-rose-800 hover:opacity-75 ;
-    }
-}
