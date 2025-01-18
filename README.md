@@ -11,7 +11,35 @@ ng build --prod
 firebase deploy
 ```
 
-## Deploying to github pages
+## Deploying to GitHub Actions
+
+1. Add projects to the main branch
+
+First, clone the GitHub repo, then add the project files.
+
+2. Create a deploy.yml
+
+Add a deploy.yml to the following path: [.github\workflows\deploy.yml](github\workflows\deploy.yml).
+
+3. Create a gh-pages branch (First time only)
+
+```
+git checkout -b gh-pages
+git rm -rf .
+echo "Temporary placeholder for GitHub Pages" > index.html
+git add index.html
+git commit -m "Setup gh-pages branch"
+git push origin gh-pages
+```
+
+4. Switch back to the main
+
+```
+git checkout main
+```
+
+
+## Deploying to GitHub pages
 Build the app
 ```
 ng build --prod
